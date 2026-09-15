@@ -12,7 +12,7 @@ def multiply(x, y):
 
 def divide(x, y):
     if y == 0:
-        return "Error! ไม่สามารถหารด้วยศูนย์ได้"
+        return "Error! cant divide 0"
     return x / y
 
 
@@ -33,23 +33,23 @@ def calculator():
 
         if choice in ("1", "2", "3", "4"):
             try:
-                num1 = float(input("กรอกตัวเลขที่ 1: "))
-                num2 = float(input("กรอกตัวเลขที่ 2: "))
+                num1 = float(input("number wanna put 1: "))
+                num2 = float(input("number wanna put 2: "))
             except ValueError:
-                print("ข้อผิดพลาด: กรุณากรอกตัวเลขเท่านั้น!")
+                print("error: only put number!")
                 continue
 
             if choice == "1":
-                print(f"ผลลัพธ์: {num1} + {num2} = {add(num1, num2)}")
+                print(f"Addition : {num1} + {num2} = {add(num1, num2)}")
             elif choice == "2":
-                print(f"ผลลัพธ์: {num1} - {num2} = {subtract(num1, num2)}")
+                print(f"Subtraction: {num1} - {num2} = {subtract(num1, num2)}")
             elif choice == "3":
-                print(f"ผลลัพธ์: {num1} * {num2} = {multiply(num1, num2)}")
+                print(f"Multiplication: {num1} * {num2} = {multiply(num1, num2)}")
             elif choice == "4":
                 result = divide(num1, num2)
-                print(f"ผลลัพธ์: {num1} / {num2} = {result}")
+                print(f"Divisoin: {num1} / {num2} = {result}")
         else:
-            print("ตัวเลือกไม่ถูกต้อง กรุณาเลือกเมนู 1-5 เท่านั้น")
+            print("Error only put calculator list only 1-5")
 
 
 # เรียกใช้งานโปรแกรม
