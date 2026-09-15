@@ -1,3 +1,4 @@
+### version 1.2 (Thirawat Klawkla)
 def add(x, y):
     return x + y
 
